@@ -23,7 +23,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Insertion_10()
     {
         const I32 COUNT = 10;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
 
@@ -48,7 +47,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Insertion_100()
     {
         const I32 COUNT = 100;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
 
@@ -73,7 +71,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Insertion_1000()
     {
         const I32 COUNT = 1000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
 
@@ -98,7 +95,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Insertion_10000()
     {
         const I32 COUNT = 10_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
 
@@ -123,7 +119,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Insertion_100000()
     {
         const I32 COUNT = 100_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
 
@@ -148,7 +143,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Insertion_1000000()
     {
         const I32 COUNT = 1_000_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
 
@@ -178,7 +172,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Search_10()
     {
         const I32 COUNT = 10;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -208,7 +201,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Search_100()
     {
         const I32 COUNT = 100;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -238,7 +230,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Search_1000()
     {
         const I32 COUNT = 1000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -268,7 +259,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Search_10000()
     {
         const I32 COUNT = 10_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -298,7 +288,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Search_100000()
     {
         const I32 COUNT = 100_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -328,7 +317,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkHashSet_Search_1000000()
     {
         const I32 COUNT = 1_000_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         HashSet<I32> __data = new(capacity: COUNT);
         for (I32 __index = 0; __index < COUNT; __index += 1)

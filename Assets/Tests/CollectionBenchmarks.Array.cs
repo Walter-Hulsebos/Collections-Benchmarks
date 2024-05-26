@@ -231,7 +231,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkArray_Search_10()
     {
         const I32 COUNT = 10;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         I32[] __data = new I32[COUNT];
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -261,7 +260,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkArray_Search_100()
     {
         const I32 COUNT = 100;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         I32[] __data = new I32[COUNT];
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -291,7 +289,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkArray_Search_1000()
     {
         const I32 COUNT = 1000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         I32[] __data = new I32[COUNT];
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -321,7 +318,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkArray_Search_10000()
     {
         const I32 COUNT = 10_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         I32[] __data = new I32[COUNT];
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -351,7 +347,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkArray_Search_100000()
     {
         const I32 COUNT = 100_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         I32[] __data = new I32[COUNT];
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -381,7 +376,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkArray_Search_1000000()
     {
         const I32 COUNT = 1_000_000;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         I32[] __data = new I32[COUNT];
         for (I32 __index = 0; __index < COUNT; __index += 1)
@@ -416,7 +410,6 @@ internal static partial class CollectionBenchmarks
     public static void BenchmarkArray_BinarySearch_10()
     {
         const I32 COUNT = 10;
-        const I64 SUM = (I64)COUNT * (COUNT - 1) / 2 * (WARMUP_COUNT + MEASUREMENT_COUNT); // Sum of all values from 0 to COUNT - 1, multiplied by the total number of iterations
         //Prepare data
         I32[] __data = new I32[COUNT];
         for (I32 __index = 0; __index < COUNT; __index += 1)
