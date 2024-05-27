@@ -13,7 +13,7 @@ internal static partial class CollectionBenchmarks
 {
     #region Indexing
     
-    private static readonly SampleGroup benchmark_list_indexing_10 = new(name: "List Indexing Time (10)", SampleUnit.Nanosecond); 
+    private static readonly SampleGroup benchmark_list_indexing_10 = new(name: "List Indexing Time (10)", unit: SampleUnit.Nanosecond); 
     [Test, Performance]
     public static void BenchmarkList_Indexing_10()
     {
@@ -48,7 +48,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_indexing_100 = new(name: "List Indexing Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_indexing_100 = new(name: "List Indexing Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Indexing_100()
     {
@@ -83,7 +83,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_indexing_1000 = new(name: "List Indexing Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_indexing_1000 = new(name: "List Indexing Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Indexing_1000()
     {
@@ -118,7 +118,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_indexing_10000 = new(name: "List Indexing Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_indexing_10000 = new(name: "List Indexing Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Indexing_10000()
     {
@@ -153,7 +153,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_indexing_100000 = new(name: "List Indexing Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_indexing_100000 = new(name: "List Indexing Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Indexing_100000()
     {
@@ -188,7 +188,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_indexing_1000000 = new(name: "List Indexing Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_indexing_1000000 = new(name: "List Indexing Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Indexing_1000000()
     {
@@ -228,7 +228,7 @@ internal static partial class CollectionBenchmarks
 
     #region Search
     
-    private static readonly SampleGroup benchmark_list_search_10 = new(name: "List Search Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_search_10 = new(name: "List Search Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Search_10()
     {
@@ -258,7 +258,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_search_100 = new(name: "List Search Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_search_100 = new(name: "List Search Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Search_100()
     {
@@ -288,7 +288,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_search_1000 = new(name: "List Search Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_search_1000 = new(name: "List Search Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Search_1000()
     {
@@ -318,7 +318,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_search_10000 = new(name: "List Search Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_search_10000 = new(name: "List Search Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Search_10000()
     {
@@ -348,7 +348,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_search_100000 = new(name: "List Search Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_search_100000 = new(name: "List Search Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Search_100000()
     {
@@ -378,7 +378,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_search_1000000 = new(name: "List Search Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_search_1000000 = new(name: "List Search Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Search_1000000()
     {
@@ -413,7 +413,7 @@ internal static partial class CollectionBenchmarks
 
     #region BinarySearch
     
-    private static readonly SampleGroup benchmark_list_binary_search_10 = new(name: "List Binary Search Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_binary_search_10 = new(name: "List Binary Search Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_BinarySearch_10()
     {
@@ -443,7 +443,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_binary_search_100 = new(name: "List Binary Search Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_binary_search_100 = new(name: "List Binary Search Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_BinarySearch_100()
     {
@@ -473,7 +473,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_binary_search_1000 = new(name: "List Binary Search Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_binary_search_1000 = new(name: "List Binary Search Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_BinarySearch_1000()
     {
@@ -503,7 +503,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_binary_search_10000 = new(name: "List Binary Search Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_binary_search_10000 = new(name: "List Binary Search Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_BinarySearch_10000()
     {
@@ -533,7 +533,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_binary_search_100000 = new(name: "List Binary Search Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_binary_search_100000 = new(name: "List Binary Search Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_BinarySearch_100000()
     {
@@ -563,7 +563,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_list_binary_search_1000000 = new(name: "List Binary Search Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_binary_search_1000000 = new(name: "List Binary Search Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_BinarySearch_1000000()
     {
@@ -609,7 +609,7 @@ internal static partial class CollectionBenchmarks
     
     #region Insertion
     
-    private static readonly SampleGroup benchmark_list_insert_10 = new(name: "List Insert Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insert_10 = new(name: "List Insert Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_10()
     {
@@ -626,14 +626,14 @@ internal static partial class CollectionBenchmarks
                     for (I32 __index = 0; __index < COUNT; __index += 1)
                     {
                         __data.Insert(index: 0, item: __index);
-                        __sum += __data[0]; // Use the modified list to prevent optimization
+                        __sum += __data[index: 0]; // Use the modified list to prevent optimization
                     }
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_insert_10)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
         
         // Use the result in some way to ensure the compiler doesn't optimize it out
@@ -643,7 +643,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_insert_100 = new(name: "List Insert Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insert_100 = new(name: "List Insert Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_100()
     {
@@ -660,14 +660,14 @@ internal static partial class CollectionBenchmarks
                     for (I32 __index = 0; __index < COUNT; __index += 1)
                     {
                         __data.Insert(index: 0, item: __index);
-                        __sum += __data[0]; // Use the modified list to prevent optimization
+                        __sum += __data[index: 0]; // Use the modified list to prevent optimization
                     }
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_insert_100)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
         
         // Use the result in some way to ensure the compiler doesn't optimize it out
@@ -677,7 +677,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_insert_1000 = new(name: "List Insert Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insert_1000 = new(name: "List Insert Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_1000()
     {
@@ -694,14 +694,14 @@ internal static partial class CollectionBenchmarks
                     for (I32 __index = 0; __index < COUNT; __index += 1)
                     {
                         __data.Insert(index: 0, item: __index);
-                        __sum += __data[0]; // Use the modified list to prevent optimization
+                        __sum += __data[index: 0]; // Use the modified list to prevent optimization
                     }
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_insert_1000)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
         
         // Use the result in some way to ensure the compiler doesn't optimize it out
@@ -711,7 +711,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_insert_10000 = new(name: "List Insert Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insert_10000 = new(name: "List Insert Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_10000()
     {
@@ -728,14 +728,14 @@ internal static partial class CollectionBenchmarks
                     for (I32 __index = 0; __index < COUNT; __index += 1)
                     {
                         __data.Insert(index: 0, item: __index);
-                        __sum += __data[0]; // Use the modified list to prevent optimization
+                        __sum += __data[index: 0]; // Use the modified list to prevent optimization
                     }
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_insert_10000)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
         
         // Use the result in some way to ensure the compiler doesn't optimize it out
@@ -808,7 +808,7 @@ internal static partial class CollectionBenchmarks
     
     #region Deletion
     
-    private static readonly SampleGroup benchmark_list_deletion_10 = new(name: "List Deletion Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_deletion_10 = new(name: "List Deletion Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Deletion_10()
     {
@@ -823,7 +823,7 @@ internal static partial class CollectionBenchmarks
                 {
                     while (__data.Count > 0) //Using a while loop to eat up the whole list, easier than a reverse for loop.
                     {
-                        __sum += __data[0]; // Use the list before removing to prevent optimization
+                        __sum += __data[index: 0]; // Use the list before removing to prevent optimization
                         __data.RemoveAt(index: 0);
                     }
                 })
@@ -831,7 +831,7 @@ internal static partial class CollectionBenchmarks
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_deletion_10)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
 
         // Use the result in some way to ensure the compiler doesn't optimize it out
@@ -841,7 +841,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_deletion_100 = new(name: "List Deletion Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_deletion_100 = new(name: "List Deletion Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Deletion_100()
     {
@@ -856,7 +856,7 @@ internal static partial class CollectionBenchmarks
                 {
                     while (__data.Count > 0) //Using a while loop to eat up the whole list, easier than a reverse for loop.
                     {
-                        __sum += __data[0]; // Use the list before removing to prevent optimization
+                        __sum += __data[index: 0]; // Use the list before removing to prevent optimization
                         __data.RemoveAt(index: 0);
                     }
                 })
@@ -864,7 +864,7 @@ internal static partial class CollectionBenchmarks
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_deletion_100)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
 
         // Use the result in some way to ensure the compiler doesn't optimize it out
@@ -874,7 +874,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_deletion_1000 = new(name: "List Deletion Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_deletion_1000 = new(name: "List Deletion Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Deletion_1000()
     {
@@ -889,7 +889,7 @@ internal static partial class CollectionBenchmarks
                 {
                     while (__data.Count > 0) //Using a while loop to eat up the whole list, easier than a reverse for loop.
                     {
-                        __sum += __data[0]; // Use the list before removing to prevent optimization
+                        __sum += __data[index: 0]; // Use the list before removing to prevent optimization
                         __data.RemoveAt(index: 0);
                     }
                 })
@@ -897,7 +897,7 @@ internal static partial class CollectionBenchmarks
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_deletion_1000)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
 
         // Use the result in some way to ensure the compiler doesn't optimize it out
@@ -907,7 +907,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_deletion_10000 = new(name: "List Deletion Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_deletion_10000 = new(name: "List Deletion Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Deletion_10000()
     {
@@ -922,7 +922,7 @@ internal static partial class CollectionBenchmarks
                 {
                     while (__data.Count > 0) //Using a while loop to eat up the whole list, easier than a reverse for loop.
                     {
-                        __sum += __data[0]; // Use the list before removing to prevent optimization
+                        __sum += __data[index: 0]; // Use the list before removing to prevent optimization
                         __data.RemoveAt(index: 0);
                     }
                 })
@@ -930,7 +930,7 @@ internal static partial class CollectionBenchmarks
                .MeasurementCount(count: MEASUREMENT_COUNT)
                .SampleGroup(sampleGroup: benchmark_list_deletion_10000)
 
-               .SetUp(() => Setup(count: COUNT, ref __data))               
+               .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
 
         // Use the result in some way to ensure the compiler doesn't optimize it out

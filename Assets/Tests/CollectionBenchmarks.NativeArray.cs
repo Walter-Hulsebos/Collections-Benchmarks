@@ -420,7 +420,7 @@ internal static partial class CollectionBenchmarks
     
     #region BinarySearch
     
-    private static readonly SampleGroup benchmark_nativearray_binary_search_10 = new(name: "Array Binary Search Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_nativearray_binary_search_10 = new(name: "Array Binary Search Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkNativeArray_BinarySearch_10()
     {
@@ -429,7 +429,7 @@ internal static partial class CollectionBenchmarks
         NativeArray<I32> __data = new(length: COUNT, allocator: Allocator.Temp);
         for (I32 __index = 0; __index < COUNT; __index += 1)
         {
-            __data[__index] = __index;
+            __data[index: __index] = __index;
         }
         ////Array.Sort(array: __data);
 
@@ -450,7 +450,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_nativearray_binary_search_100 = new(name: "Array Binary Search Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_nativearray_binary_search_100 = new(name: "Array Binary Search Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkNativeArray_BinarySearch_100()
     {
@@ -459,7 +459,7 @@ internal static partial class CollectionBenchmarks
         NativeArray<I32> __data = new(length: COUNT, allocator: Allocator.Temp);
         for (I32 __index = 0; __index < COUNT; __index += 1)
         {
-            __data[__index] = __index;
+            __data[index: __index] = __index;
         }
         //Array.Sort(array: __data);
 
@@ -480,7 +480,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_nativearray_binary_search_1000 = new(name: "Array Binary Search Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_nativearray_binary_search_1000 = new(name: "Array Binary Search Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkNativeArray_BinarySearch_1000()
     {
@@ -489,7 +489,7 @@ internal static partial class CollectionBenchmarks
         NativeArray<I32> __data = new(length: COUNT, allocator: Allocator.Temp);
         for (I32 __index = 0; __index < COUNT; __index += 1)
         {
-            __data[__index] = __index;
+            __data[index: __index] = __index;
         }
         //Array.Sort(array: __data);
 
@@ -510,7 +510,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_nativearray_binary_search_10000 = new(name: "Array Binary Search Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_nativearray_binary_search_10000 = new(name: "Array Binary Search Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkNativeArray_BinarySearch_10000()
     {
@@ -519,7 +519,7 @@ internal static partial class CollectionBenchmarks
         NativeArray<I32> __data = new(length: COUNT, allocator: Allocator.Temp);
         for (I32 __index = 0; __index < COUNT; __index += 1)
         {
-            __data[__index] = __index;
+            __data[index: __index] = __index;
         }
         ////Array.Sort(array: __data);
 
@@ -540,7 +540,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_nativearray_binary_search_100000 = new(name: "Array Binary Search Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_nativearray_binary_search_100000 = new(name: "Array Binary Search Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkNativeArray_BinarySearch_100000()
     {
@@ -549,7 +549,7 @@ internal static partial class CollectionBenchmarks
         NativeArray<I32> __data = new(length: COUNT, allocator: Allocator.Temp);
         for (I32 __index = 0; __index < COUNT; __index += 1)
         {
-            __data[__index] = __index;
+            __data[index: __index] = __index;
         }
 
         // Variable to store the result to prevent optimization
@@ -569,7 +569,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_nativearray_binary_search_1000000 = new(name: "Array Binary Search Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_nativearray_binary_search_1000000 = new(name: "Array Binary Search Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkNativeArray_BinarySearch_1000000()
     {
@@ -578,7 +578,7 @@ internal static partial class CollectionBenchmarks
         NativeArray<I32> __data = new(length: COUNT, allocator: Allocator.Temp);
         for (I32 __index = 0; __index < COUNT; __index += 1)
         {
-            __data[__index] = __index;
+            __data[index: __index] = __index;
         }
         //Array.Sort(array: __data);
 

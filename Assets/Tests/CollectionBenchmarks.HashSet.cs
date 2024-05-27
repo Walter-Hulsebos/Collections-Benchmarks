@@ -18,7 +18,7 @@ internal static partial class CollectionBenchmarks
 {
     #region Insertion
 
-    private static readonly SampleGroup benchmark_hashset_insertion_10 = new(name: "HashSet Insertion Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_insertion_10 = new(name: "HashSet Insertion Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Insertion_10()
     {
@@ -42,7 +42,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreEqual(expected: COUNT, actual: __data.Count);
     }
-    private static readonly SampleGroup benchmark_hashset_insertion_100 = new(name: "HashSet Insertion Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_insertion_100 = new(name: "HashSet Insertion Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Insertion_100()
     {
@@ -66,7 +66,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreEqual(expected: COUNT, actual: __data.Count);
     }
-    private static readonly SampleGroup benchmark_hashset_insertion_1000 = new(name: "HashSet Insertion Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_insertion_1000 = new(name: "HashSet Insertion Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Insertion_1000()
     {
@@ -90,7 +90,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreEqual(expected: COUNT, actual: __data.Count);
     }
-    private static readonly SampleGroup benchmark_hashset_insertion_10000 = new(name: "HashSet Insertion Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_insertion_10000 = new(name: "HashSet Insertion Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Insertion_10000()
     {
@@ -114,7 +114,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreEqual(expected: COUNT, actual: __data.Count);
     }
-    private static readonly SampleGroup benchmark_hashset_insertion_100000 = new(name: "HashSet Insertion Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_insertion_100000 = new(name: "HashSet Insertion Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Insertion_100000()
     {
@@ -138,7 +138,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreEqual(expected: COUNT, actual: __data.Count);
     }
-    private static readonly SampleGroup benchmark_hashset_insertion_1000000 = new(name: "HashSet Insertion Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_insertion_1000000 = new(name: "HashSet Insertion Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Insertion_1000000()
     {
@@ -167,7 +167,7 @@ internal static partial class CollectionBenchmarks
 
     #region Search
 
-    private static readonly SampleGroup benchmark_hashset_search_10 = new(name: "HashSet Search Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_search_10 = new(name: "HashSet Search Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Search_10()
     {
@@ -196,7 +196,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.IsTrue(condition: __found);
     }
-    private static readonly SampleGroup benchmark_hashset_search_100 = new(name: "HashSet Search Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_search_100 = new(name: "HashSet Search Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Search_100()
     {
@@ -225,7 +225,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.IsTrue(condition: __found);
     }
-    private static readonly SampleGroup benchmark_hashset_search_1000 = new(name: "HashSet Search Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_search_1000 = new(name: "HashSet Search Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Search_1000()
     {
@@ -254,7 +254,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.IsTrue(condition: __found);
     }
-    private static readonly SampleGroup benchmark_hashset_search_10000 = new(name: "HashSet Search Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_search_10000 = new(name: "HashSet Search Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Search_10000()
     {
@@ -283,7 +283,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.IsTrue(condition: __found);
     }
-    private static readonly SampleGroup benchmark_hashset_search_100000 = new(name: "HashSet Search Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_search_100000 = new(name: "HashSet Search Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Search_100000()
     {
@@ -312,7 +312,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.IsTrue(condition: __found);
     }
-    private static readonly SampleGroup benchmark_hashset_search_1000000 = new(name: "HashSet Search Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_search_1000000 = new(name: "HashSet Search Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Search_1000000()
     {
@@ -346,7 +346,7 @@ internal static partial class CollectionBenchmarks
 
     #region Deletion
 
-    private static readonly SampleGroup benchmark_hashset_deletion_10 = new(name: "HashSet Deletion Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_deletion_10 = new(name: "HashSet Deletion Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Deletion_10()
     {
@@ -381,7 +381,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_hashset_deletion_100 = new(name: "HashSet Deletion Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_deletion_100 = new(name: "HashSet Deletion Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Deletion_100()
     {
@@ -416,7 +416,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_hashset_deletion_1000 = new(name: "HashSet Deletion Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_deletion_1000 = new(name: "HashSet Deletion Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Deletion_1000()
     {
@@ -451,7 +451,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_hashset_deletion_10000 = new(name: "HashSet Deletion Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_deletion_10000 = new(name: "HashSet Deletion Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Deletion_10000()
     {
@@ -486,7 +486,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_hashset_deletion_100000 = new(name: "HashSet Deletion Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_deletion_100000 = new(name: "HashSet Deletion Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Deletion_100000()
     {
@@ -521,7 +521,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_hashset_deletion_1000000 = new(name: "HashSet Deletion Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_hashset_deletion_1000000 = new(name: "HashSet Deletion Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkHashSet_Deletion_1000000()
     {

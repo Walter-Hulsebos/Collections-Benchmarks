@@ -11,7 +11,7 @@ internal static partial class CollectionBenchmarks
 {
     #region Indexing
     
-    private static readonly SampleGroup benchmark_array_indexing_10 = new(name: "Array Indexing Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_indexing_10 = new(name: "Array Indexing Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Indexing_10()
     {
@@ -46,7 +46,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_array_indexing_100 = new(name: "Array Indexing Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_indexing_100 = new(name: "Array Indexing Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Indexing_100()
     {
@@ -81,7 +81,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_array_indexing_1000 = new(name: "Array Indexing Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_indexing_1000 = new(name: "Array Indexing Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Indexing_1000()
     {
@@ -116,7 +116,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_array_indexing_10000 = new(name: "Array Indexing Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_indexing_10000 = new(name: "Array Indexing Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Indexing_10000()
     {
@@ -151,7 +151,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_array_indexing_100000 = new(name: "Array Indexing Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_indexing_100000 = new(name: "Array Indexing Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Indexing_100000()
     {
@@ -186,7 +186,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_array_indexing_1000000 = new(name: "Array Indexing Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_indexing_1000000 = new(name: "Array Indexing Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Indexing_1000000()
     {
@@ -226,7 +226,7 @@ internal static partial class CollectionBenchmarks
 
     #region Search
     
-    private static readonly SampleGroup benchmark_array_search_10 = new(name: "Array Search Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_search_10 = new(name: "Array Search Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Search_10()
     {
@@ -255,7 +255,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_search_100 = new(name: "Array Search Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_search_100 = new(name: "Array Search Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Search_100()
     {
@@ -284,7 +284,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_search_1000 = new(name: "Array Search Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_search_1000 = new(name: "Array Search Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Search_1000()
     {
@@ -313,7 +313,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_search_10000 = new(name: "Array Search Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_search_10000 = new(name: "Array Search Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Search_10000()
     {
@@ -342,7 +342,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_search_100000 = new(name: "Array Search Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_search_100000 = new(name: "Array Search Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Search_100000()
     {
@@ -371,7 +371,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_search_1000000 = new(name: "Array Search Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_search_1000000 = new(name: "Array Search Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_Search_1000000()
     {
@@ -405,7 +405,7 @@ internal static partial class CollectionBenchmarks
 
     #region BinarySearch
     
-    private static readonly SampleGroup benchmark_array_binary_search_10 = new(name: "Array Binary Search Time (10)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_binary_search_10 = new(name: "Array Binary Search Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_BinarySearch_10()
     {
@@ -435,7 +435,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_binary_search_100 = new(name: "Array Binary Search Time (100)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_binary_search_100 = new(name: "Array Binary Search Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_BinarySearch_100()
     {
@@ -465,7 +465,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_binary_search_1000 = new(name: "Array Binary Search Time (1000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_binary_search_1000 = new(name: "Array Binary Search Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_BinarySearch_1000()
     {
@@ -495,7 +495,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_binary_search_10000 = new(name: "Array Binary Search Time (10,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_binary_search_10000 = new(name: "Array Binary Search Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_BinarySearch_10000()
     {
@@ -525,7 +525,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_binary_search_100000 = new(name: "Array Binary Search Time (100,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_binary_search_100000 = new(name: "Array Binary Search Time (100,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_BinarySearch_100000()
     {
@@ -555,7 +555,7 @@ internal static partial class CollectionBenchmarks
         // Use the result in some way to ensure the compiler doesn't optimize it out
         Assert.AreNotEqual(expected: -1, actual: __foundIndex);
     }
-    private static readonly SampleGroup benchmark_array_binary_search_1000000 = new(name: "Array Binary Search Time (1,000,000)", SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_array_binary_search_1000000 = new(name: "Array Binary Search Time (1,000,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkArray_BinarySearch_1000000()
     {
