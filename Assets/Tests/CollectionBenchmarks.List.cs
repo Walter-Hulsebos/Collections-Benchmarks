@@ -609,7 +609,7 @@ internal static partial class CollectionBenchmarks
     
     #region Insertion
     
-    private static readonly SampleGroup benchmark_list_insert_10 = new(name: "List Insert Time (10)", unit: SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insertion_10 = new(name: "List Insertion Time (10)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_10()
     {
@@ -631,7 +631,7 @@ internal static partial class CollectionBenchmarks
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
-               .SampleGroup(sampleGroup: benchmark_list_insert_10)
+               .SampleGroup(sampleGroup: benchmark_list_insertion_10)
 
                .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
@@ -643,7 +643,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_insert_100 = new(name: "List Insert Time (100)", unit: SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insertion_100 = new(name: "List Insertion Time (100)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_100()
     {
@@ -665,7 +665,7 @@ internal static partial class CollectionBenchmarks
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
-               .SampleGroup(sampleGroup: benchmark_list_insert_100)
+               .SampleGroup(sampleGroup: benchmark_list_insertion_100)
 
                .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
@@ -677,7 +677,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_insert_1000 = new(name: "List Insert Time (1000)", unit: SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insertion_1000 = new(name: "List Insertion Time (1000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_1000()
     {
@@ -699,7 +699,7 @@ internal static partial class CollectionBenchmarks
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
-               .SampleGroup(sampleGroup: benchmark_list_insert_1000)
+               .SampleGroup(sampleGroup: benchmark_list_insertion_1000)
 
                .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
@@ -711,7 +711,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    private static readonly SampleGroup benchmark_list_insert_10000 = new(name: "List Insert Time (10,000)", unit: SampleUnit.Nanosecond);
+    private static readonly SampleGroup benchmark_list_insertion_10000 = new(name: "List Insertion Time (10,000)", unit: SampleUnit.Nanosecond);
     [Test, Performance]
     public static void BenchmarkList_Insertion_10000()
     {
@@ -733,7 +733,7 @@ internal static partial class CollectionBenchmarks
                 })
                .WarmupCount(count: WARMUP_COUNT)
                .MeasurementCount(count: MEASUREMENT_COUNT)
-               .SampleGroup(sampleGroup: benchmark_list_insert_10000)
+               .SampleGroup(sampleGroup: benchmark_list_insertion_10000)
 
                .SetUp(action: () => Setup(count: COUNT, data: ref __data))               
                .Run();
@@ -745,7 +745,7 @@ internal static partial class CollectionBenchmarks
                               $"actual: {__sum}");
         Assert.AreEqual(expected: SUM, actual: __sum);
     }
-    // private static readonly SampleGroup benchmark_list_insert_100000 = new(name: "List Insert Time (100,000)", SampleUnit.Nanosecond);
+    // private static readonly SampleGroup benchmark_list_insertion_100000 = new(name: "List Insertion Time (100,000)", SampleUnit.Nanosecond);
     // [Test, Performance]
     // public static void BenchmarkList_Insertion_100000()
     // {
@@ -766,7 +766,7 @@ internal static partial class CollectionBenchmarks
     //             })
     //            .WarmupCount(count: WARMUP_COUNT)
     //            .MeasurementCount(count: MEASUREMENT_COUNT)
-    //            .SampleGroup(sampleGroup: benchmark_list_insert_100000)
+    //            .SampleGroup(sampleGroup: benchmark_list_insertion_100000)
     //            .GC()
     //            .SetUp(() => Setup(count: COUNT, ref __data))
     //            .Run();
@@ -774,7 +774,7 @@ internal static partial class CollectionBenchmarks
     //     // Use the result in some way to ensure the compiler doesn't optimize it out
     //     Assert.AreNotEqual(expected: 0, actual: __sum);
     // }
-    // private static readonly SampleGroup benchmark_list_insert_1000000 = new(name: "List Insert Time (1,000,000)", SampleUnit.Nanosecond);
+    // private static readonly SampleGroup benchmark_list_insertion_1000000 = new(name: "List Insertion Time (1,000,000)", SampleUnit.Nanosecond);
     // [Test, Performance]
     // public static void BenchmarkList_Insertion_1000000()
     // {
@@ -795,7 +795,7 @@ internal static partial class CollectionBenchmarks
     //             })
     //            .WarmupCount(count: WARMUP_COUNT)
     //            .MeasurementCount(count: MEASUREMENT_COUNT)
-    //            .SampleGroup(sampleGroup: benchmark_list_insert_1000000)
+    //            .SampleGroup(sampleGroup: benchmark_list_insertion_1000000)
     //            .GC()
     //            .SetUp(() => Setup(count: COUNT, ref __data))
     //            .Run();
